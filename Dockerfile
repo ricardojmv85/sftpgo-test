@@ -16,6 +16,9 @@ RUN apt-get update && apt-get install -y ca-certificates
 # git and rsync are optional, uncomment the next line to add support for them if needed
 #RUN apt-get install -y git rsync
 
+# ca certificate installation
+RUN apt-get update && apt-get install -y ca-certificates
+
 ARG BASE_DIR=/app
 ARG DATA_REL_DIR=data
 ARG CONFIG_REL_DIR=config
